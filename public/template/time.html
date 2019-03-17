@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>限时秒杀</title>
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/time.css" />
+    <script src="js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top-header">
+        <div class="top-header-contain margin">
+            <div class="top-header-contain-left">
+                <a href="#">登录</a>
+                <span>|</span>
+                <a href="#">注册</a>
+            </div>
+            <div class="top-header-contain-right">
+                <ul>
+                    <li class="myId">
+                        <a href="#">我的账号</a>
+                    </li>
+                    <li class="line">|</li>
+                    <li><a href="#" style="color:#C00">补交货款</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">配送查询</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">订单查询</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="header">
+        <div class="margin header-contain">
+            <div class="header-left">
+                <a href="#"><img src="images/logo.gif" /></a>
+            </div>
+            <div class="header-center">
+                <form>
+                    <input class="txt" type="text" />
+                    <input class="btn" type="button" value="搜索" />
+                </form>
+                <div class="hotkey">
+                    <a style="color:#C00;font-weight:700" href="#">七夕节鲜花</a>
+                    <a href="#">爱情鲜花</a>
+                    <a href="#">生日鲜花</a>
+                    <a href="#">商业鲜花</a>
+                    <a href="#">生日蛋糕</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="shop">
+                    <i class="shop-car"></i>
+                    <a href="#">我的购物车</a>
+                    <i class="car-left">></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <nav>
+        <div class="margin">
+            <div id="classify" class="allmenu">
+                <span>全部商品分类</span>
+                <div></div>
+            </div>
+            <div class="menudiv">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="http://localhost/hua-project/list.html">鲜花</a></li>
+                    <li><a href="#">99玫瑰</a></li>
+                    <li><a href="#">高档礼盒</a></li>
+                    <li><a href="#">蛋糕</a></li>
+                    <li><a href="#">抢购</a></li>
+                    <li><a href="#">开业花篮</a></li>
+                    <li><a href="#">七夕节鲜花</a></li>
+                    <li class="tel">400-658-1777</li>
+                </ul>
+            </div>
+
+        </div>
+        </div>
+    </nav>
+    <div class="deline"></div>
+    <div class="start margin">
+        <ul id="dtime">
+            <li><span>08:00</span><i>即将开始</i></li>
+            <li><span>09:00</span><i>即将开始</i></li>
+            <li><span>10:00</span><i>即将开始</i></li>
+            <li><span>11:00</span><i>即将开始</i></li>
+            <li><span>12:00</span><i>即将开始</i></li>
+            <li><span>13:00</span><i>即将开始</i></li>
+            <li><span>14:00</span><i>即将开始</i></li>
+            <li><span>15:00</span><i>即将开始</i></li>
+            <li><span>16:00</span><i>即将开始</i></li>
+            <li><span>17:00</span><i>即将开始</i></li>
+            <li><span>18:00</span><i>即将开始</i></li>
+            <li><span>19:00</span><i>即将开始</i></li>
+            <li><span>20:00</span><i>即将开始</i></li>
+            <li><span>21:00</span><i>即将开始</i></li>
+            <li><span>22:00</span><i>即将开始</i></li>
+            <li><span>23:00</span><i>即将开始</i></li>
+        </ul>
+    </div>
+    <div class="time margin">
+        <h3>限时抢购 更多好礼</h3>
+        <div class="time-right">
+            <span id="day"></span><i>天</i>
+            <span id="hour"></span><i>时</i>
+            <span id="minute"></span><i>分</i>
+            <span id="second"></span><i>秒</i>
+        </div>
+    </div>
+    <div class="goodsCss margin">
+        <div class="goodsCss-top">
+            <div class="g-left">
+                <i></i>
+                <h2>秒 杀 推 荐</h2>
+            </div>
+
+        </div>
+        <div class="goodsCss-bottom" id="goodb">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <!-- arc-div -->
+    <div class="margin arc-div">
+        <div class="arc-div-left">
+            <div class="top-same">
+                <h4>花语大全</h4>
+                <a href="#"></a>
+            </div>
+            <ul class="bottom-same">
+                <li>非洲堇的花语及传说</li>
+                <li>金牛座的生日花</li>
+                <li>四叶草的花语和传说</li>
+                <li>兰花的花语及传说</li>
+                <li>十二朵花守护月份</li>
+                <li>荷花的花语及传说</li>
+                <li>白羊座的生日花</li>
+            </ul>
+        </div>
+        <div class="arc-div-center">
+            <div class="top-same">
+                <h4>最新评价</h4>
+                <a href="#"></a>
+            </div>
+            <ul>
+                <li>
+                    <div class="l">
+                        <a href="#">
+                            <img src="images/F-711029601.jpg" />
+                            <br>
+                            相爱一生
+                        </a>
+                    </div>
+                    <div class="r">
+                        <div class="t">
+                            <span></span>
+                            <span>2018-06-21 12:52:11</span>
+                        </div>
+                        <div class="b">
+                            <a href="#">内容：蛋糕非常好吃送的也很准时，女神过生日的时候送的这款蛋糕直接就在一起啦，以后每年都</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="arc-div-right">
+            <div class="top-same">
+                <h4>送花礼仪</h4>
+                <a href="#"></a>
+            </div>
+            <div class="b">
+                <ul class="bottom-same">
+                    <li>非洲堇的花语及传说</li>
+                    <li>金牛座的生日花</li>
+                    <li>四叶草的花语和传说</li>
+                    <li>兰花的花语及传说</li>
+                    <li>十二朵花守护月份</li>
+                    <li>荷花的花语及传说</li>
+                    <li>白羊座的生日花</li>
+                </ul>
+                <ul class="bottom-same">
+                    <li>非洲堇的花语及传说</li>
+                    <li>金牛座的生日花</li>
+                    <li>四叶草的花语和传说</li>
+                    <li>兰花的花语及传说</li>
+                    <li>十二朵花守护月份</li>
+                    <li>荷花的花语及传说</li>
+                    <li>白羊座的生日花</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footerline -->
+    <div class="footerline margin">
+        <ul>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+        </ul>
+    </div>
+    <div class="footer margin">
+        <div class="footer-left">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+            </dl>
+        </div>
+        <div class="footer-right">
+            <h3>400-658-1777</h3>
+            <p>周一至周日 24小时服务</p>
+            <a href="#">24小时在线客服</a>
+        </div>
+    </div>
+    <div class="site-info margin">
+        <div class="site-info-l">
+            <div class="bg">七彩官网</div>
+            <div class="cp">
+                <span>联系我们</span>
+                <span>|</span>
+                <span>联系我们</span>
+                <span>|</span>
+                <span>联系我们</span>
+                <p>Copyright©1997-2016 7caihua.com All rights reserved.青岛七彩时尚电子商务有限公司 -七彩鲜花-版权所有,禁止非法复制
+                </p>
+            </div>
+        </div>
+        <div class="site-info-r">
+            <img src="images/tip_pic1.jpg" />
+            <img src="images/tip_pic1.jpg" />
+            <img src="images/tip_pic1.jpg" />
+            <img src="images/tip_pic1.jpg" />
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/time.js"></script>
+</body>
+
+
+</html>

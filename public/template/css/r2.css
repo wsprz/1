@@ -1,0 +1,23 @@
+.header{display:flex;}
+.margin{width:1200px;margin:0 auto;}
+.header .header-right{margin-left:300px;}
+.header ul{display:flex;}
+.header ul li{flex:1;text-align: center;height: 76px;line-height:76px;margin-right:20px;}
+.header ul li a{background:url(../images/f-ico1.png)no-repeat 3px 2px;background-size: 20px;height:20px;padding:5px 0 5px 30px;font-size:16px;}
+.middle{background:url(../images/userlogin_bg.jpg) no-repeat center;height:475px;position: relative;}
+.middle .middle-right{position: absolute;top:50px;left:900px;padding:20px 40px;background-color:#fff;}
+
+.middle .middle-right .tel,.middle .middle-right .psw{width:280px;height:38px;border:1px solid #ccc;position: relative;margin-top:20px;}
+.middle .middle-right .tel i,.middle .middle-right .psw i{display:inline-block;width:38px;height:38px;background:url(../images/pwd-icons-new.png) no-repeat;}
+input{border:none;}
+.middle .middle-right .tel input,.middle .middle-right .psw input{height:38px;width:242px;position: absolute;box-sizing: border-box;padding:0 5px;}
+.middle .middle-right .psw i{background-position:-48px 0px;}
+.middle .middle-right #btn{width:282px;height:40px;background:#F25454;}
+.middle .middle-right .mian{height:20px;margin:20px 0;line-height: 20px;}
+.middle .middle-right .mian span{position: relative;top:-3px;}
+.middle .middle-right .mian a{float:right;margin-top:-3px;}
+/* 
+.cont{margin: 50px auto;width:400px;height:60px;display: flex;align-items: center;justify-content: space-between}
+.bar{width:260px;border:solid 1px black;height:30px;}
+.bar p{width:50%;height:100%;background: red;position: relative;}
+.bar b{display: block;height: 30px;width: 40px;background: blue;position: absolute;} */

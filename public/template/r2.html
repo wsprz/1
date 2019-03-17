@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.idcode.js"></script>
+    <link rel="stylesheet" href="css/jquery.idcode.css" />
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/r.css" />
+</head>
+
+<body>
+    <header>
+        <div class="margin header-top">
+            <div><img src="images/logo.gif" /> <span>欢迎注册</span></div>
+            <div><a href="#">已有账号,去登录</a></div>
+        </div>
+    </header>
+    <div class="middle margin">
+        <label>用户名: </label><input type="text" id="user" /><span id="msg">用户名仅支持中文、字母、数字、“-”“_”的组合，4-20个字符</span><br>
+        <label>密码: </label><input type="text" id="pass" /><span id="pass1">密码可以是数字,字母,特殊字符</span><br>
+        <label>再次输入密码: </label><input type="text" id="pass2" /><span></span><br>
+        <label>手机号: </label><input type="text" id="tel" /><span></span><br>
+        <label class="lblVerification">验证码: </label><input type="text" id="Txtidcode" class="txtVerification" /><span
+            id="idcode"></span><span id="yzm">不区分大小写</span><br>
+        <input class="cbox" type="checkbox" /><span class="cbox-ty">我已阅读并同意
+        </span><a class="cbox-xy" href="#">《七彩用户注册协议》</a><br>
+        <input type="button" value="注册" id="btn">
+    </div>
+    <script src="js/r2-yz.js"></script>
+
+
+
+
+</body>
+
+<script src="js/ajax.3.0.js"></script>
+<script src="js/r2.js"></script>
+
+</html>

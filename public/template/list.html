@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/list.css" />
+    <link rel="stylesheet" href="css/pagination.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.pagination.js"></script>
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top-header">
+        <div class="top-header-contain margin">
+            <div class="top-header-contain-left">
+                <a href="#">登录</a>
+                <span>|</span>
+                <a href="#">注册</a>
+            </div>
+            <div class="top-header-contain-right">
+                <ul>
+                    <li class="myId">
+                        <a href="#">我的账号</a>
+                        <!-- 账号中下拉菜单 -->
+                        <!-- <div style="display:none">
+                            <ul>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的订单</a></li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li class="line">|</li>
+                    <li><a href="#" style="color:#C00">补交货款</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">配送查询</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">订单查询</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="header">
+        <div class="margin header-contain">
+            <div class="header-left">
+                <a href="#"><img src="images/logo.gif" /></a>
+            </div>
+            <div class="header-center">
+                <form>
+                    <input class="txt" type="text" />
+                    <input class="btn" type="button" value="搜索" />
+                </form>
+                <div class="hotkey">
+                    <a style="color:#C00;font-weight:700" href="#">七夕节鲜花</a>
+                    <a href="#">爱情鲜花</a>
+                    <a href="#">生日鲜花</a>
+                    <a href="#">商业鲜花</a>
+                    <a href="#">生日蛋糕</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="shop">
+                    <i class="shop-car"></i>
+                    <a href="#">我的购物车</a>
+                    <i class="car-left">></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <nav>
+        <div class="margin">
+            <div id="classify" class="allmenu">
+                <span>全部商品分类</span>
+                <div></div>
+            </div>
+            <div class="menudiv">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">鲜花</a></li>
+                    <li><a href="#">99玫瑰</a></li>
+                    <li><a href="#">高档礼盒</a></li>
+                    <li><a href="#">蛋糕</a></li>
+                    <li><a href="#">蛋糕+鲜花</a></li>
+                    <li><a href="#">开业花篮</a></li>
+                    <li><a href="#">七夕节鲜花</a></li>
+                    <li class="tel">400-658-1777</li>
+                </ul>
+            </div>
+            <div id="menu" style="display:none" class="left-menu">
+                <div class="left-menu-div">
+                    <ul id="menuL">
+                        <li><a href="#">鲜花、玫瑰、百合、生日鲜花</a><i class="i">></i><span></span>
+                            <div style="display:none" class="menu-ceng">
+                                <div class="menu-ceng-left">
+                                    <dl>
+                                        <dt>
+
+                                        </dt>
+                                        <dd>
+
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+
+                                        </dt>
+                                        <dd>
+
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+
+                                        </dt>
+                                        <dd>
+
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+
+                                        </dt>
+                                        <dd>
+
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="menu-ceng-right">
+                                    <img src="images/ceng_xh.jpg" />
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">蛋糕、生日蛋糕、卡通蛋糕</a><i class="i">></i><span></span>
+                            <div style="display:none" class="menu-ceng">
+                                <div class="menu-ceng-left">
+
+                                    <dl>
+                                        <dt>
+
+                                        </dt>
+                                        <dd>
+
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>
+
+                                        </dt>
+                                        <dd>
+
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="menu-ceng-right">
+                                    <img src="images/ceng_xh.jpg" />
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">红酒、法国红酒、白葡萄酒</a><i class="i">></i><span></span></li>
+                        <li><a href="#">巧克力、费列罗、德芙</a><i class="i">></i><span></span></li>
+                        <li><a href="#">浪漫组合、蛋糕+鲜花</a><i class="i">></i><span></span></li>
+                        <li><a href="#">鲜花、玫瑰、百合、生日鲜花</a><i class="i">></i><span></span></li>
+                        <li><a href="#">鲜花、玫瑰、百合、生日鲜花</a><i class="i">></i><span></span></li>
+                        <li><a href="#">鲜花、玫瑰、百合、生日鲜花</a><i class="i">></i><span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="deline"></div>
+    <div class="mbox margin"><a href="#">首页</a>>鲜花</div>
+    <!-- 面包屑 -->
+    <div class="typeborder">
+        <div class="leftNav margin">
+            <ul>
+                <li>
+                    <span class="l">按对象</span>
+                    <span class="r">
+                        <a href="#" class="on">全部</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="l">按对象</span>
+                    <span class="r">
+                        <a href="#" class="on">全部</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="l">按对象</span>
+                    <span class="r">
+                        <a href="#" class="on">全部</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                        <a href="#">鲜花</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="margin sub">
+        共有商品 <b>20</b> 件，当前为：第 <b>1</b> 到<b>8</b> 件
+    </div>
+    <!-- list -->
+    <div class="list margin">
+        <ul>
+<!--          
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li>
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li>
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li>
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li>
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li>
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li>
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li>
+            <li>
+                <div class="color">
+                    <a href="#"><img src="images/011196175228.jpg" /></a>
+                    <p>我爱你 编号：099187</p>
+                    <span>99枝玫瑰，LOVE造型</span>
+                    <span>$333</span>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <!-- page -->
+    <div class="page margin">
+            <div id="Pagination" class="pagination"></div>
+    </div>
+   
+    <!-- footerline -->
+    <div class="footerline margin">
+        <ul>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+            <li><a href="#">全国3000+地区免费送</a></li>
+        </ul>
+    </div>
+    <div class="footer margin">
+        <div class="footer-left">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+                <dd>联系客服</dd>
+                <dd>联系客服</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>会员介绍</dd>
+            </dl>
+        </div>
+        <div class="footer-right">
+            <h3>400-658-1777</h3>
+            <p>周一至周日 24小时服务</p>
+            <a href="#">24小时在线客服</a>
+        </div>
+    </div>
+    <div class="site-info margin">
+        <div class="site-info-l">
+            <div class="bg">七彩官网</div>
+            <div class="cp">
+                <span>联系我们</span>
+                <span>|</span>
+                <span>联系我们</span>
+                <span>|</span>
+                <span>联系我们</span>
+                <p>Copyright©1997-2016 7caihua.com All rights reserved.青岛七彩时尚电子商务有限公司 -七彩鲜花-版权所有,禁止非法复制
+                </p>
+            </div>
+        </div>
+        <div class="site-info-r">
+            <img src="images/tip_pic1.jpg" />
+            <img src="images/tip_pic1.jpg" />
+            <img src="images/tip_pic1.jpg" />
+            <img src="images/tip_pic1.jpg" />
+        </div>
+    </div>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/list.js"></script>
+</body>
+
+
+</html>
